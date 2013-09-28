@@ -1,0 +1,59 @@
+extends layout
+	
+
+block content 
+	div(data-role='content')
+		#placeholder
+		.qBox.center_box
+			button.submit(onclick='return submitButton();', type='submit') Submit
+	script(type='text/javascript').
+		var totals2 = new Length();
+		$.getJSON('javascripts/question.json', function(question) {
+		var output = "";
+		for (var i in question.questions) {
+		output += "<div class=\"qBox center_box\">" +
+		"<p class=\"persistent-question\">" + question.questions[i].content + "</p>" +
+		"<div class=\"button\">" +
+		"<input id=\"answer" + question.questions[i].type +"\" type=\"radio\" name= \"group" + question.questions[i].n + "\"value=\"first\">" + question.questions[i].answers.answer1 + " <br>"
+		+
+		"<input id=\"answer " + question.questions[i].type + " \" type=\"radio\" name= \"group" + question.questions[i].n + "\"value=\"second\">" + question.questions[i].answers.answer2 + " <br>" +
+		"</div>" +
+		"</div>"
+		}
+		document.getElementById("placeholder").outerHTML = output;
+		});
+
+		function submitButton() {
+		var amountCorrect = 0;
+		for(var i = 1; i <= 45; i++) {
+			var radios = document.getElementsByName('group'+i);
+			for(var j = 0; j < radios.length; j++) {
+			var radio = radios[j];
+			if(radio.value == "first" && radio.id == "answer1" && radio.checked) {
+			addPoint(1,1);
+			}else if(radio.value == "second" && radio.id == "answer1" && radio.checked){
+			addPoint(1,0);
+			}else if(radio.value == "first" && radio.id == "answer2" && radio.checked) {
+			addPoint(2,1);
+			}else if(radio.value == "second" && radio.id == "answer2" && radio.checked){
+			addPoint(2,0);
+			}else if(radio.value == "first" && radio.id == "answer3" && radio.checked) {
+			addPoint(3,1);
+			}else if(radio.value == "second" && radio.id == "answer3" && radio.checked){
+			addPoint(3,0);
+			}else if(radio.value == "first" && radio.id == "answer4" && radio.checked) {
+			addPoint(4,1);
+			}else if(radio.value == "second" && radio.id == "answer4" && radio.checked){
+			addPoint(4,0);
+			}
+			}
+		}
+		var all = calcAll();
+		$.post("/score", {pType: all}
+		).done(function() {
+			window.location.replace("/");
+
+		});
+
+		
+		}

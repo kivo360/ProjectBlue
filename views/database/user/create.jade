@@ -1,0 +1,23 @@
+extends ../../layout
+
+block content
+	h1 New User
+
+	form(action= '/register', method='post')
+		input(type="hidden", name="_method", value="PUT")
+		p First Name
+			br
+			input#name(type='text',value='',placeholder='First Name',name='first')
+		p Middle Name 
+			br
+			input#middle(type='text',value='',placeholder='Middle Name',name='middle')
+		p Last Name
+			br
+			input#last(type='text',value='',placeholder='Last Name',name='last')	
+		p Email 
+			br
+			input#email(type='email',value='',placeholder='@',name='email')
+		p Password
+			br
+			input#password(type='password',value='',placeholder='Password',name='password')	
+		input(type='submit') Submit

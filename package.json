@@ -1,0 +1,21 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "3.3.4",
+    "ejs":"*",
+    "stylus": "*",
+    "mongoose": ">=3.6",
+    "bcrypt" : "*",
+    "passport" : "*",
+    "passport-local" : "*",
+    "socket.io" : "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}

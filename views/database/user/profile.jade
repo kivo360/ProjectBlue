@@ -1,0 +1,16 @@
+extends ../../layout
+
+block content
+	h1 #{user.first} #{user.last}
+	ul
+		li Email: #{user.email}
+	div#profileInfo
+		p Stuff#1
+		p Stuff#2
+		p Stuff#3
+	ul
+		li: a(href="/") Edit
+		li
+			form(action='/user/#{user._id}', method="POST")
+				input(type="hidden", name="_method", value="DELETE")
+				button(type="submit") Delete

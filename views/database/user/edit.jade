@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+	h1 Edit User
+
+	form(action= '/test/#{user.name}', method='post')
+		input(type="hidden", name="_method", value="PUT")
+		p First Name
+			br
+			input#name(type='text',value='#{user.first}',placeholder='First Name',name='first')
+		p Middle Name 
+			br
+			input#middle(type='text',value='#{user.middle}',placeholder='Middle Name',name='middle')
+		p Last Name
+			br
+			input#last(type='text',value='#{user.last}',placeholder='Last Name',name='last')	
+
+		p Email 
+			br
+			input#email(type='email',value='#{user.email}',placeholder='@',name='email')
+		p Password
+			br
+			input#password(type='password',value='',placeholder='Password',name='password')	
+		input(type='submit') Edit

@@ -1,0 +1,12 @@
+extends ../../layout
+
+block content
+	h1 #{user.first} #{user.last}
+	ul
+		li Email: #{user.email}
+	ul
+		li:a(href="/user/#{user._id}/edit") Edit
+		li
+			form(action='/user/#{user._id}', method="POST")
+				input(type="hidden", name="_method", value="DELETE")
+				button(type="submit") Delete

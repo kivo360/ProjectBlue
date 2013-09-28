@@ -1,0 +1,17 @@
+extends ../../layout
+
+block content
+	h1 Add Contact Information
+
+	form(action= '/contactInfo', method='post')
+		p Perfered Contact Method
+			input#cMethod(type='text',value='',placeholder='contactMethod',name='cMethod')
+			br
+		p Phone Number
+			br
+		p +
+			input#cCode(type='number',value='',placeholder='Country Code',name='cCode')
+			input#aCode(type='number',value='',placeholder='Area Code',name='aCode')	
+			input#three(type='number',value='',placeholder='first three',name='three')
+			input#four(type='number',value='',placeholder='last four',name='four')	
+		input(type='submit') Enter

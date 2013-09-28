@@ -1,0 +1,221 @@
+{
+	"questions":
+	[
+		{
+		"n":1,
+		"content":"I need to be alone to revitalize myself", 
+		"answers":{ "answer1":"No", 
+					"answer2":"Yes"
+			},
+		"type":1 
+		},
+		{
+			"n":2,
+			"content":"Are you a natural conversationalist?", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":1 
+		},
+		{
+			"n":3,
+			"content":"I like to get involved with social activities", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":1 
+		},
+		{
+			"n":4,
+			"content":"You need to be alone after prolonged social activities", 
+			"answers":{ "answer1":"No", 
+					"answer2":"Yes"
+				},
+			"type":1 
+		},
+		{
+			"n":5,
+			"content":"Which do you find yourself focused on?", 
+			"answers":{ "answer1":"Possibilities", 
+					"answer2":"What Exist"
+				},
+			"type":2 
+		},
+		{
+			"n":6,
+			"content":"Do you find yourself thinking of the future often?", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":2
+		},
+		{
+			"n":7,
+			"content":"Compared to others, my strengths are ", 
+			"answers":{ "answer1":"Imagination, Creativity, Innovation", 
+					"answer2":"Sound grasp of reality and how things are done"
+				},
+			"type":2 
+		},
+		{
+			"n":8,
+			"content":"Are you:", 
+			"answers":{ "answer1":"Absent-minded", 
+					"answer2":"Planted in the moment"
+				},
+			"type":2 
+		},
+		{
+			"n":9,
+			"content":"I like to think about how things can be improved", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":2 
+		},
+		{
+			"n":10,
+			"content":"I like to think about new ways of doing things", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":2 
+		},
+		{
+			"n":11,
+			"content":"I have a vivid imagination that I like to exercise", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":2 
+		},
+		{
+			"n":12,
+			"content":"I make decisions with my", 
+			"answers":{ "answer1":"Head", 
+					"answer2":"Heart"
+				},
+			"type":3 
+		},
+		{
+			"n":13,
+			"content":"Which is more important to you?", 
+			"answers":{ "answer1":"Logic", 
+					"answer2":"Feelings"
+				},
+			"type":3 
+		},
+		{
+			"n":14,
+			"content":"I am more:", 
+			"answers":{ "answer1":"Hardnosed, rational, blunt", 
+					"answer2":"Forgiving, compassionate, tactful"
+				},
+			"type":3 
+		},
+		{
+			"n":15,
+			"content":"When I help people with their problems, my strength is in:", 
+			"answers":{ "answer1":"Figuring out the problem and how to fix it", 
+					"answer2":"Providing emotional support and helping them feel better"
+				},
+			"type":3 
+		},
+		{
+			"n":16,
+			"content":"Which do you prefer?", 
+			"answers":{ "answer1":"If something makes sense", 
+					"answer2":"If something feels right"
+				},
+			"type":3 
+		},
+		{
+			"n":17,
+			"content":"I am more", 
+			"answers":{ "answer1":"Tough-minded", 
+					"answer2":"Sentimental"
+				},
+			"type":3 
+		},
+		{
+			"n":18,
+			"content":"I find that sentimental moments and activities are special and mean a lot to me", 
+			"answers":{ "answer1":"No", 
+					"answer2":"Yes"
+				},
+			"type":3 
+		},
+		{
+			"n":19,
+			"content":"Which better describes you?", 
+			"answers":{ "answer1":"I am eager to help others understand and realize things", 
+					"answer2":"I am eager to help others feel better"
+				},
+			"type":3 
+		},
+		{
+			"n":20,
+			"content":"It's important to me that everybody gets along", 
+			"answers":{ "answer1":"No", 
+					"answer2":"Yes"
+				},
+			"type":3 
+		},
+		{
+			"n":21,
+			"content":"I prefer to:", 
+			"answers":{ "answer1":"Come to conclusions about things", 
+					"answer2":"Keep things open-ended"
+				},
+			"type":4 
+		},
+		{
+			"n":22,
+			"content":"Is your first reaction to consult directions?", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":4 
+		},
+		{
+			"n":23,
+			"content":"I am:", 
+			"answers":{ "answer1":"Structured", 
+					"answer2":"Spontaneous"
+				},
+			"type":4 
+		},
+		{
+			"n":24,
+			"content":"I prefer to:", 
+			"answers":{ "answer1":"Plan ahead", 
+					"answer2":"Wait to see what comes"
+				},
+			"type":4 
+		},
+		{
+			"n":25,
+			"content":"I prefer:", 
+			"answers":{ "answer1":"Situations that are in control", 
+					"answer2":"Situations allowing freedom"
+				},
+			"type":4 
+		},
+		{
+			"n":26,
+			"content":"I makes to do list and follow them", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":4 
+		},
+		{
+			"n":27,
+			"content":"I am a creature of habit", 
+			"answers":{ "answer1":"Yes", 
+					"answer2":"No"
+				},
+			"type":4 
+		}
+	]
+}

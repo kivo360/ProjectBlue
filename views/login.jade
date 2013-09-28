@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	div#page
+		div.loginBox
+			h1 Login
+
+			form(action= '/login', method='post')
+				p Email
+					br
+					input#email(type='text',value='',placeholder='email',name='email')
+				p Password
+					br
+					input#password(type='password',value='',placeholder='Password',name='password')	
+				input(type='submit') Submit
+		div.registerBox
+			h1 Register
+
+			form(action= '/register', method='post')
+				p Email
+					br
+					input#email(type='email',value='',placeholder='@',name='email')
+				p Password
+					br
+					input#password(type='password',value='',placeholder='Password',name='password')	
+				p First Name
+					br
+					input#name(type='text',value='',placeholder='First Name',name='first')
+				p Last Name
+					br
+					input#last(type='text',value='',placeholder='Last Name',name='last')	
+				input(type='submit') Submit
